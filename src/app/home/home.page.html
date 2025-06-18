@@ -1,20 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Travel Guide</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <!-- Search Bar -->
+  <ion-searchbar placeholder="Search destinations, tips, routes..."></ion-searchbar>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- Quick Access Buttons -->
+  <ion-grid class="ion-padding-top">
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" fill="outline" color="primary">
+          Travel Routes
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" fill="outline" color="secondary">
+          Explore Destinations
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top">
+      <ion-col size="6">
+        <ion-button expand="block" fill="outline" color="success">
+          Travel Tips
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" fill="outline" color="warning">
+          Book a Tour
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top">
+      <ion-col size="12">
+        <ion-button expand="block" fill="solid" color="medium">
+          Profile
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Optional Section -->
+  <ion-card class="ion-margin-top">
+    <ion-card-header>
+      <ion-card-title>Recommended This Week</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      - Boracay Island<br>
+      - Chocolate Hills Bohol<br>
+      - Vigan Heritage Village
+    </ion-card-content>
+  </ion-card>
 </ion-content>
