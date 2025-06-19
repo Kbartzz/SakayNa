@@ -8,17 +8,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'hlogin',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'registration',
-    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
-  },
+  path: 'addroute',
+  loadChildren: () => import('./add-route/add-route.module').then(m => m.AddRoutePageModule)
+}
+
 ];
 
 @NgModule({
